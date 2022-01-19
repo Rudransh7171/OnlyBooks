@@ -65,20 +65,27 @@
         </div>
     </div>
     <!-- js -->
+    
     <script>
         // nav bar
-       
+        
       
         var MenuItems =document.getElementById("MenuItems");
+        const menu= document.querySelector('.menu1');
+        const cart =document.querySelector('.logo')
         MenuItems.style.maxHeight="0px";
         function menutoggle()
         {
             if(MenuItems.style.maxHeight=="0px"){
                 MenuItems.style.maxHeight="200px";
+                menu.classList.add('active');
+                cart.classList.add('active');
             }
             else
             {
                 MenuItems.style.maxHeight="0px";
+                menu.classList.remove('active');
+                cart.classList.remove('active');
             }
         }
        
