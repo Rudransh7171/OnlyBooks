@@ -150,7 +150,7 @@ h1,h2{
     background: #555;
     margin-bottom: 100px ;
     margin-top:150px;
-    height: 500px;
+    
 }
 .hold{
     max-width: 800px;
@@ -165,7 +165,7 @@ h1,h2{
 .abt h2{
     font-size: 60px;
 }
-.showcase .collection img{
+.hold img{
     margin-top: 100px;
     padding: 20px;
     
@@ -196,4 +196,33 @@ h1,h2{
         display: inline-block;
         cursor: pointer;
     }
+    .books{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .books img{
+        margin: 40px 0;
+    }
+    .hold {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hold img{
+        align-items: center;
+        padding: 0;
+        width: 300px;
+        height: 250px;
+    }
+    .abt h2,.abt p, .abt a{
+        text-align: center;
+    }
+    .abt .btn{
+        
+        margin-left: 30%;
+        align-items: center;
+    
+        margin-bottom: 50px;
+    }
+    
 }
