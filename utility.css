@@ -5,6 +5,10 @@ a{
 li{
     list-style-type: none;
 }
+.dis{
+    z-index: 1;
+}
+
 
 /* Button */
 .btn{
