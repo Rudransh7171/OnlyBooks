@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400&family=Raleway:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    
+}
+/* navbar */
+.navbar.active{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+   position: fixed;
+    padding: 10px;
+    background: #333;
+    opacity: 0.7;
+    color:#fff
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+   position: fixed;
+    padding: 10px;
+    color:#fff
+    
+    
+}
+.navbar ul{
+    flex: 1;
+    text-align: right;
+    margin-bottom: 33px;
+}
+.navbar ul li{
+    display: inline-block;
+    text-align: right;
+   
+    padding: 0 10px;
+}
+.navbar ul li a:hover{
+    color:#0284d0;;
+}
+
+.cont{
+    /* background: #333;
+    opacity: 0.8; */
+    width: 100%;
+    margin: auto;
+}
+.im{
+    margin-top: 6px;
+}
+.cart{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu{
+    display: none;
+}
+/* content */
+.main{
+    background: url('/img/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+.main .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+.main .content h1{
+    font-size: 55px;
+    
+}
+.main .content p{
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+.main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.main *{
+    z-index: 10;;
+}
+/* showcase */
+.showcase{
+    margin-top: 100px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+
+}
+.container .books{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 50px;
+}
+.container h2{
+    margin: 100px 0 70px 0;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    color: #555;
+}
+.container h2::after{
+    content: '';
+    background: #0284d0;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateX(-50);
+}
+.showcase .collection{
+    background: #555;
+    margin-bottom: 100px ;
+    margin-top:150px;
+    height: 500px;
+}
+.hold{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.abt{
+    margin-top: 100px;
+    line-height: 1.6em;
+}
+.abt h2{
+    font-size: 60px;
+}
+.showcase .collection img{
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+
+
+/* media query */
+@media only screen and (max-width:890px){
+    .navbar ul{
+        background: #333;
+        position: absolute;
+        overflow: hidden;
+        transition: 0.5s;
+        top:50px;
+        left: 0;
+        width: 100%;
+        overflow-y: visible;
+        
+        
+    }
+    .navbar ul li{
+        display: block;
+        padding: 20px;
+        
+        
+    }
+    .menu{
+        display: inline-block;
+        cursor: pointer;
+    }
+}
